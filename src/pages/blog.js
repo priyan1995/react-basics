@@ -9,17 +9,17 @@ const Blog = () => {
     ]);
 
     return (
-       
+
         <div className="blog-div">
-            <br/>
-            <hr/>
-            <br/>
+            <br />
+            <hr />
+            <br />
             <h1>Blogs</h1>
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
-                    <h2>{ blog.title }</h2>
-                    <p><strong>{ blog.body }</strong></p>
-                    <p>Written By: { blog.author }</p>
+                    <h2>{blog.title}</h2>
+                    <p><strong>{blog.body}</strong></p>
+                    <p>Written By: {blog.author}</p>
                 </div>
             ))}
         </div>
