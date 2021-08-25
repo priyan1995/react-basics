@@ -48,8 +48,6 @@ const Home = () => {
         <button onClick={getGender}>Show Gender</button>
       </div>
 
-      
-
 
 
     </div>
