@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "./blogList";
 
 const Blog = () => {
@@ -13,6 +13,12 @@ const Blog = () => {
         const newBlogs = blogs.filter( blog => blog.id !== id);
         setBlogs(newBlogs);
     }
+
+    useEffect( () => {
+        console.log('Event fired..');
+        console.log(blogs);
+    })
+
 
     return (
 
