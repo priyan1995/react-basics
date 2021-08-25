@@ -1,6 +1,7 @@
 const BlogList = (props) => {
     const blogs = props.blogs;
     const title = props.title;
+    const handleHide = props.handleHide;
     return (
         <div className="blog-list">
 
@@ -10,6 +11,7 @@ const BlogList = (props) => {
                     <h2>{blog.title}</h2>
                     <p><strong>{blog.body}</strong></p>
                     <p>Written By: {blog.author}</p>
+                    <button onClick={() => handleHide(blog.id)}>Hide Blog</button>
                 </div>
             ))}
         </div>

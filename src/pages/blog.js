@@ -9,6 +9,11 @@ const Blog = () => {
         { title: "Web dev tool tips", body: "Amet ipsum", author: "Mario", id: 3 },
     ]);
 
+    const handleHide = (id) => {
+        const newBlogs = blogs.filter( blog => blog.id !== id);
+        setBlogs(newBlogs);
+    }
+
     return (
 
         <div className="blog-div">
@@ -16,8 +21,8 @@ const Blog = () => {
             <hr />
             <br />
             
-           <BlogList blogs = {blogs} title="Blogs" />
-           <BlogList blogs = { blogs.filter((blog) => blog.author === 'Mario') } title="Mario's Blogs" />
+           <BlogList blogs = {blogs} title="Blogs" handleHide={handleHide} />
+           <BlogList blogs = { blogs.filter((blog) => blog.author === 'Mario') } handleHide={handleHide} title="Mario's Blogs" />
         </div>
 
     );
