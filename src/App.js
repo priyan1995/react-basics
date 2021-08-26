@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Navbar from  './pages/navbar';
+import Navbar from './pages/navbar';
 import Home from './pages/home';
 import Blog from './pages/blog'
+import UserData from './pages/userData';
 
 function App() {
   return (
@@ -10,7 +11,12 @@ function App() {
       <Navbar />
       <Home />
       <Blog />
-      
+      <hr />
+      <br />
+      <UserData />
+
+
+
     </div>
   );
 }

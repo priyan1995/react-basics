@@ -46,8 +46,7 @@ const Home = () => {
       <div className="show-gender">
         <p>I'm a { gender }.</p>
         <button onClick={getGender}>Show Gender</button>
-      </div>
-
+      </div> 
 
 
     </div>
