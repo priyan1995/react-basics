@@ -27,28 +27,12 @@ const UserData = () => {
         <div>
             <h1>User Data</h1>
             <hr />
+
+            <p>User ID : { users.userId }</p>
+            <p>Title : { users.title }</p>
+
             
 
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <th scope="row">{ users.id }</th>
-                        <td></td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                   
-                </tbody>
-            </table>
 
         </div>
     );
