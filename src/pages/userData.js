@@ -15,8 +15,6 @@ const UserData = () => {
                 // console.log(blogid);
                 // const title = data.title;
                 setUsers(data);
-
-
             })
         // console.log(users);
 
@@ -29,15 +27,9 @@ const UserData = () => {
             <hr />
 
             <p>User ID : { users.userId }</p>
-            <p>Title : { users.title }</p>
-
-            
-
-
+            <p>Title : { users.title }</p>    
         </div>
     );
-
-
 }
 
 export default UserData;
