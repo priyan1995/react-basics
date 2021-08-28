@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
 const UserData = () => {
-
+    
     const [users, setUsers] = useState([]);
+    const [isPending, setIsPending] = useState(true);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -15,6 +16,7 @@ const UserData = () => {
                 // console.log(blogid);
                 // const title = data.title;
                 setUsers(data);
+                setIsPending(false);
             })
         // console.log(users);
 
@@ -23,6 +25,7 @@ const UserData = () => {
 
     return (
         <div>
+            { isPending && <div><h3>Loading...</h3></div> }
             <h1>User Data</h1>
             <hr />
 

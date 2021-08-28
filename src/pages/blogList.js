@@ -1,7 +1,9 @@
+
+
 const BlogList = (props) => {
     const blogs = props.blogs;
     const title = props.title;
-    const handleHide = props.handleHide;
+    const handleHide = props.handleHide;   
     return (
         <div className="blog-list">
 
