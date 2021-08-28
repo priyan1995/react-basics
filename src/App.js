@@ -16,15 +16,21 @@ function App() {
 
           <Route exact path="/">
             <Home />
-            <hr />
-            <br />
-            <Blog />
-            <UserData />
           </Route>
 
           <Route path="/create">
             <CreateBlog />
           </Route>
+
+          <Route path="/blogs">
+            <Blog />
+          </Route>
+
+          <Router path="/users">
+            <hr />
+            <br />
+            <UserData />
+          </Router>
 
         </Switch>
       </div>

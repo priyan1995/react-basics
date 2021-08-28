@@ -23,10 +23,8 @@ const Blog = () => {
     return (
 
         <div className="blog-div">
-            <br />
             <hr />
-            <br />
-            
+            <br />            
            <BlogList blogs = {blogs} title="Blogs" handleHide={handleHide} />
            <BlogList blogs = { blogs.filter((blog) => blog.author === 'Mario') } handleHide={handleHide} title="Mario's Blogs" />
         </div>

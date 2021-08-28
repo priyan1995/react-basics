@@ -8,6 +8,8 @@ const BlogList = (props) => {
         <div className="blog-list">
 
             <h1> { title }</h1>
+            <br />
+            <hr />
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
