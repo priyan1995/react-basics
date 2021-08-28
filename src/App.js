@@ -26,9 +26,7 @@ function App() {
             <Blog />
           </Route>
 
-          <Router path="/users">
-            <hr />
-            <br />
+          <Router path="/users">           
             <UserData />
           </Router>
 

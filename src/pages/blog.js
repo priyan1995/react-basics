@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BlogList from "./blogList";
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
 
@@ -22,9 +23,10 @@ const Blog = () => {
 
     return (
 
-        <div className="blog-div">
-            <hr />
-            <br />            
+        <div className="blog-div">            
+            <hr />            
+            <br />    
+            <Link to="/create">Create New</Link>        
            <BlogList blogs = {blogs} title="Blogs" handleHide={handleHide} />
            <BlogList blogs = { blogs.filter((blog) => blog.author === 'Mario') } handleHide={handleHide} title="Mario's Blogs" />
         </div>

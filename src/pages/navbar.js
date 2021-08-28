@@ -8,7 +8,7 @@ class Navbar extends React.Component{
                 <h1>Lorem Ipsum</h1>
                 <div className="links">
                     <Link to="/">Home</Link>
-                    <Link to="/create">New Blog</Link>
+                    {/* <Link to="/create">New Blog</Link> */}
                     <Link to="/users">Users</Link>
                     <Link to="/blogs">Blogs</Link>
                 </div>

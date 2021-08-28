@@ -9,6 +9,8 @@ const UserData = () => {
     return (
         <div>
            
+           <hr />
+            <br />
             <h1>User Data</h1>
             <br/>
             <hr />
