@@ -6,6 +6,7 @@ import Blog from './pages/blog'
 import UserData from './pages/userData';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateBlog from './pages/create';
+import BlogDetails from './pages/blogSingle';
 
 function App() {
   return (
@@ -26,9 +27,15 @@ function App() {
             <Blog />
           </Route>
 
-          <Router path="/users">           
+          <Route path="/singleBlogs/:id">           
+            <BlogDetails />
+          </Route>
+
+          <Route path="/users">           
             <UserData />
-          </Router>
+          </Route>
+
+      
 
         </Switch>
       </div>
