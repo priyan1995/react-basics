@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const CreateUser = () => {
 
 
     const [info, setInfo ] = useState('');
+    const history = useHistory();
 
     const userSubmit = (e) => {
         e.preventDefault();
@@ -17,6 +19,7 @@ const CreateUser = () => {
             body: JSON.stringify(info)
         }).then(()=>{
             console.log('new user added');
+            history.push('/users');
         })
     }
 
