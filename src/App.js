@@ -7,6 +7,7 @@ import UserData from './pages/userData';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateBlog from './pages/create';
 import BlogDetails from './pages/blogSingle';
+import CreateUser from './pages/createUser';
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
 
           <Route path="/users">           
             <UserData />
+          </Route>
+
+          <Route path="/createUser">
+            <CreateUser />
           </Route>
 
       

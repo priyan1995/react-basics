@@ -14,7 +14,7 @@ const CreateBlog = () => {
 
         setIsPending(true);
 
-        console.log(blog);
+        //console.log(blog);
 
         fetch ('url' , {
             method: 'POST',
