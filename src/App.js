@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateBlog from './pages/create';
 import BlogDetails from './pages/blogSingle';
 import CreateUser from './pages/createUser';
+import NotFound from './pages/notFound';
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
 
           <Route path="/createUser">
             <CreateUser />
+          </Route>
+
+          <Route path="*">
+            <NotFound />
           </Route>
 
       
