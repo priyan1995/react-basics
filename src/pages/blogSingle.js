@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { useState } from "react";
 
 const BlogDetails = () =>{
@@ -10,7 +10,17 @@ const BlogDetails = () =>{
         { title: "Web dev tool tips", body: "Amet ipsum", author: "Mario", id: 3 },
     ]);
 
+    const history = useHistory();
+
     const { id } = useParams(); // catch the ID from url
+
+    const handleDelete = () => {
+        fetch ('url' + blogs.id, {
+            method: 'DELETE'
+        }).then(() => {
+            history.push('/');
+        })
+    }
     
 
     return (
@@ -20,6 +30,7 @@ const BlogDetails = () =>{
                     <h2>{ filteredBlog.title }</h2>
                     <p>{ filteredBlog.body }</p>
                     <h6>Author: { filteredBlog.author }</h6>
+                    <button className="delete" onClick={handleDelete}>Delete</button> 
                 </div>
             ))}
             

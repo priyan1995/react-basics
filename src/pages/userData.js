@@ -4,10 +4,9 @@ import useFetch from "../hooks/fetchData";
 
 const UserData = () => {
     
-   const  {data: users , isPending, error} = useFetch('https://jsonplaceholder.typicode.com/todos/1');
+    const  {data: users , isPending, error} = useFetch('https://jsonplaceholder.typicode.com/todos/1');
 
-
-    return (
+      return (
         <div>
            
            <hr />
@@ -23,7 +22,8 @@ const UserData = () => {
             { isPending && <div><h3>Loading...</h3></div> }
 
             <p>User ID : { users.userId }</p>
-            <p>Title : { users.title }</p>    
+            <p>Title : { users.title }</p>   
+           
         </div>
     );
 }
